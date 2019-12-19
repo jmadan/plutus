@@ -1,9 +1,10 @@
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
 import React from 'react';
-import ProductCategories from './modules/views/ProductCategories';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from './homepage'
+import Coupon from './coupon'
 import AppFooter from './modules/views/AppFooter';
-import HomeHero from './modules/views/HomeHero';
 import AppAppBar from './modules/views/AppAppBar';
 
 
@@ -32,12 +33,25 @@ const sections = [
 
 function App(){
   return (
-    <React.Fragment>
-      <AppAppBar />
-      <HomeHero />
-      <ProductCategories />
-      <AppFooter />
-    </React.Fragment>
+    <Router>
+        {/*
+          A <Switch> looks through all its children <Route>
+          elements and renders the first one whose path
+          matches the current URL. Use a <Switch> any time
+          you have multiple routes, but you want only one
+          of them to render at a time
+        */}
+        <AppAppBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/coupons/:cat">
+            <Coupon />
+          </Route>
+        </Switch>
+        <AppFooter />
+    </Router>
   )
 }
 
