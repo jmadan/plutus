@@ -179,17 +179,18 @@ function ProductCategories(props) {
             />
             <div className={classes.imageBackdrop} />
             <div className={classes.imageButton}>
-            <Link to={`/coupons/${image.param}`}>
+            {/* <Link to={`/coupons/${image.param}`}> */}
               <Typography
-                component="h3"
+                component={Link}
+                to={`/coupons/${image.param}`}
                 variant="h6"
-                color="primary"
+                color="inherit"
                 className={classes.imageTitle}
               >
                 {image.title}
                 <div className={classes.imageMarked} />
               </Typography>
-              </Link>
+              {/* </Link> */}
             </div>
           </ButtonBase>
         ))}

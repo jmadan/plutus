@@ -40,7 +40,8 @@ function ProductHero(props) {
         Find your coupons
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        Enjoy secret offers on your shopping.
+                  {'New offers every week. New experiences, new surprises. '}
+                  {'Shopping will no longer be alike.'}
       </Typography>
       {/* <Button
         color="secondary"
@@ -53,7 +54,7 @@ function ProductHero(props) {
         Register
       </Button> */}
       <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
+        Discover the joy of coupons
       </Typography>
     </ProductHeroLayout>
   );

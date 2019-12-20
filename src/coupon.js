@@ -4,6 +4,7 @@ import { Typography, Backdrop, CircularProgress } from '@material-ui/core'
 import { useParams } from 'react-router-dom'
 const rp = require("request-promise")
 const cheerio = require("cheerio")
+import CouponList from './modules/views/CouponList'
 
 const useStyles = makeStyles(theme => ({
     backdrop: {
@@ -75,16 +76,15 @@ export default function Coupon() {
 
   return (
     <React.Fragment>
-        <Typography>
-        Coupon page - {cat}
-        <br />
+        <Typography variant="h2" align="center" component="h2" gutterBottom>
+            {cat}
+        </Typography>
         {working ? <Backdrop
             className={classes.backdrop}
             open={working}
          >
             <CircularProgress color="inherit" />
-        </Backdrop> : valid_coupons.map(c => c.title)}
-        </Typography>
+        </Backdrop> : <CouponList coupons={valid_coupons} />}
         
     </React.Fragment>
   );
