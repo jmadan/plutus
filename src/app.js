@@ -49,6 +49,9 @@ function App(){
           <Route exact path="/coupons/:cat">
             <Coupon />
           </Route>
+          <Route exact path="/betainvite">
+            <Coupon />
+          </Route>
         </Switch>
         <AppFooter />
     </Router>

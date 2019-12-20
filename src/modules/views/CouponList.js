@@ -26,7 +26,7 @@ export default function CouponList(props) {
   let items = props.coupons.map(c => (
     <Paper className={classes.root}>
       <Typography variant="h5" marked="center" align="center" component="h3">
-          {c.title} - {c.coupon}
+          {c.title} - <b>{c.coupon}</b>
       </Typography>
       </Paper>
   ))

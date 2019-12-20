@@ -53,16 +53,16 @@ function AppAppBar(props) {
             {'Plutus'}
           </Link>
           <div className={classes.right}>
-           {/*  <Link
+             <Link
               color="inherit"
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href="/"
             >
-              {'Sign In'}
+              {'Home'}
             </Link>
-            <Link
+           {/* <Link
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}

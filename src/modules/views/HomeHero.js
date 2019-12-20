@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '../components/Button';
-import Typography from '../components/Typography';
-import ProductHeroLayout from './ProductHeroLayout';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import Button from '../components/Button'
+import Typography from '../components/Typography'
+import ProductHeroLayout from './ProductHeroLayout'
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
+
+const backgroundImage = require('../../public/imgs/multicolored-abstract-painting-1012982.jpg')
 
 const styles = theme => ({
   background: {
@@ -43,16 +43,16 @@ function ProductHero(props) {
                   {'New offers every week. New experiences, new surprises. '}
                   {'Shopping will no longer be alike.'}
       </Typography>
-      {/* <Button
+      <Button
         color="secondary"
         variant="contained"
         size="large"
         className={classes.button}
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/betainvite"
       >
-        Register
-      </Button> */}
+        Interested?
+      </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
         Discover the joy of coupons
       </Typography>

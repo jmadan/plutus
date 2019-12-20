@@ -93,6 +93,7 @@ function ProductCategories(props) {
 
   const images = [
     {
+      img: require('../../public/imgs/auto-automobile-automotive-car-305070.jpg'),
       url:
         'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
       title: 'Automotive',
@@ -100,6 +101,7 @@ function ProductCategories(props) {
       width: '40%',
     },
     {
+      img: require('../../public/imgs/magazines-on-shelves-2927585.jpg'),
       url:
         'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
       title: 'Books & Magazines',
@@ -107,6 +109,7 @@ function ProductCategories(props) {
       width: '20%',
     },
     {
+      img: require('../../public/imgs/close-up-photo-of-gaming-keyboard-2115257.jpg'),
       url:
         'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
       title: 'Computing',
@@ -114,6 +117,7 @@ function ProductCategories(props) {
       width: '40%',
     },
     {
+      img: require('../../public/imgs/white-led-take-out-signage-hanging-891393.jpg'),
       url:
         'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400&q=80',
       title: 'Dining & Takeaway',
@@ -121,6 +125,7 @@ function ProductCategories(props) {
       width: '38%',
     },
     {
+      img: require('../../public/imgs/accomplishment-ceremony-education-graduation-267885.jpg'),
       url:
         'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400&q=80',
       title: 'Education',
@@ -128,6 +133,7 @@ function ProductCategories(props) {
       width: '38%',
     },
     {
+      img: require('../../public/imgs/view-of-vintage-camera-325153.jpg'),
       url:
         'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400&q=80',
       title: 'Electrical & Electronics',
@@ -135,6 +141,7 @@ function ProductCategories(props) {
       width: '24%',
     },
     {
+      img: require('../../public/imgs/view-of-vintage-camera-325153.jpg'),
       url:
         'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400&q=80',
       title: 'Entertainment',
@@ -142,6 +149,7 @@ function ProductCategories(props) {
       width: '40%',
     },
     {
+      img: require('../../public/imgs/assorted-clothes-996329.jpg'),
       url:
         'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
       title: 'Fashion & Apparel',
@@ -149,6 +157,7 @@ function ProductCategories(props) {
       width: '20%',
     },
     {
+      img: require('../../public/imgs/rolled-20-u-s-dollar-bill-164527.jpg'),
       url:
         'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400&q=80',
       title: 'Financial',
@@ -174,7 +183,8 @@ function ProductCategories(props) {
             <div
               className={classes.imageSrc}
               style={{
-                backgroundImage: `url(${image.url})`,
+                // backgroundImage: `url(${image.url})`,
+                backgroundImage: `url(${image.img})`,
               }}
             />
             <div className={classes.imageBackdrop} />

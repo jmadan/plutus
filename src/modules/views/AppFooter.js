@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="/">
+        2019 - Made with hands
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -79,11 +79,12 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={6} sm={4} md={3}>
+          <Grid item xs={12} sm={12} md={12}>
             <Grid
               container
               direction="column"
-              justify="flex-end"
+              justify="center"
+              alignItems="center"
               className={classes.iconsWrapper}
               spacing={2}
             >
