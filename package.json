@@ -21,6 +21,7 @@
   "scripts": {
     "prebuild": "shx rm -rf app/*",
     "build": "parcel build ./src/public/index.html --out-dir app --no-cache",
+    "devbuild": "parcel ./src/public/index.html --out-dir app --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node server.js"
   },
@@ -53,5 +54,6 @@
     "babel-polyfill": "^6.26.0",
     "parcel-bundler": "^1.12.4",
     "shx": "^0.3.2"
-  }
+  },
+  "proxy": "http://localhost:4000"
 }
